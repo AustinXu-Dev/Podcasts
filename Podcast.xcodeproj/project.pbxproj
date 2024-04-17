@@ -18,6 +18,7 @@
 		BCA25ECE2BCE5D65004A61D9 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA25ECD2BCE5D65004A61D9 /* Podcast.swift */; };
 		BCBBFC772BCE9F660097AC26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCBBFC762BCE9F660097AC26 /* Alamofire */; };
 		BCBBFC792BCE9F660097AC26 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BCBBFC782BCE9F660097AC26 /* AlamofireDynamic */; };
+		BCBBFC7C2BCFF8640097AC26 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBBFC7B2BCFF8640097AC26 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BCA25EC72BCD03DD004A61D9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BCA25ECA2BCE5C31004A61D9 /* PodcastsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsSearchController.swift; sourceTree = "<group>"; };
 		BCA25ECD2BCE5D65004A61D9 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		BCBBFC7B2BCFF8640097AC26 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		BCA25EB22BCD0376004A61D9 /* Podcast */ = {
 			isa = PBXGroup;
 			children = (
+				BCBBFC7A2BCFF85A0097AC26 /* API */,
 				BCA25ECC2BCE5D5B004A61D9 /* Models */,
 				BCA25EC92BCE5C1D004A61D9 /* Controllers */,
 				BCA25EB32BCD0376004A61D9 /* AppDelegate.swift */,
@@ -94,6 +97,14 @@
 				BCA25ECD2BCE5D65004A61D9 /* Podcast.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BCBBFC7A2BCFF85A0097AC26 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BCBBFC7B2BCFF8640097AC26 /* APIService.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCA25EB82BCD0376004A61D9 /* ViewController.swift in Sources */,
+				BCBBFC7C2BCFF8640097AC26 /* APIService.swift in Sources */,
 				BCA25EB42BCD0376004A61D9 /* AppDelegate.swift in Sources */,
 				BCA25ECE2BCE5D65004A61D9 /* Podcast.swift in Sources */,
 				BCA25EC82BCD03DD004A61D9 /* MainTabBarController.swift in Sources */,
