@@ -19,6 +19,8 @@
 		BCBBFC772BCE9F660097AC26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCBBFC762BCE9F660097AC26 /* Alamofire */; };
 		BCBBFC792BCE9F660097AC26 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BCBBFC782BCE9F660097AC26 /* AlamofireDynamic */; };
 		BCBBFC7C2BCFF8640097AC26 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBBFC7B2BCFF8640097AC26 /* APIService.swift */; };
+		BCBBFC7F2BD002700097AC26 /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBBFC7E2BD002700097AC26 /* PodcastCell.xib */; };
+		BCBBFC812BD005410097AC26 /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBBFC802BD005410097AC26 /* PodcastCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BCA25ECA2BCE5C31004A61D9 /* PodcastsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsSearchController.swift; sourceTree = "<group>"; };
 		BCA25ECD2BCE5D65004A61D9 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		BCBBFC7B2BCFF8640097AC26 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		BCBBFC7E2BD002700097AC26 /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
+		BCBBFC802BD005410097AC26 /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			children = (
 				BCBBFC7A2BCFF85A0097AC26 /* API */,
 				BCA25ECC2BCE5D5B004A61D9 /* Models */,
+				BCBBFC7D2BD002520097AC26 /* Views */,
 				BCA25EC92BCE5C1D004A61D9 /* Controllers */,
 				BCA25EB32BCD0376004A61D9 /* AppDelegate.swift */,
 				BCA25EB52BCD0376004A61D9 /* SceneDelegate.swift */,
@@ -105,6 +110,15 @@
 				BCBBFC7B2BCFF8640097AC26 /* APIService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		BCBBFC7D2BD002520097AC26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCBBFC7E2BD002700097AC26 /* PodcastCell.xib */,
+				BCBBFC802BD005410097AC26 /* PodcastCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +188,7 @@
 			files = (
 				BCA25EBD2BCD0377004A61D9 /* Assets.xcassets in Resources */,
 				BCA25EC02BCD0377004A61D9 /* Base in Resources */,
+				BCBBFC7F2BD002700097AC26 /* PodcastCell.xib in Resources */,
 				BCA25EBB2BCD0376004A61D9 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +202,7 @@
 			files = (
 				BCA25EB82BCD0376004A61D9 /* ViewController.swift in Sources */,
 				BCBBFC7C2BCFF8640097AC26 /* APIService.swift in Sources */,
+				BCBBFC812BD005410097AC26 /* PodcastCell.swift in Sources */,
 				BCA25EB42BCD0376004A61D9 /* AppDelegate.swift in Sources */,
 				BCA25ECE2BCE5D65004A61D9 /* Podcast.swift in Sources */,
 				BCA25EC82BCD03DD004A61D9 /* MainTabBarController.swift in Sources */,
