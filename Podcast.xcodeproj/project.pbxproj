@@ -17,6 +17,11 @@
 		BCA25EC82BCD03DD004A61D9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA25EC72BCD03DD004A61D9 /* MainTabBarController.swift */; };
 		BCA25ECB2BCE5C31004A61D9 /* PodcastsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA25ECA2BCE5C31004A61D9 /* PodcastsSearchController.swift */; };
 		BCA25ECE2BCE5D65004A61D9 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA25ECD2BCE5D65004A61D9 /* Podcast.swift */; };
+		BCA5817C2BE1229800CDE19D /* EpisodesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA5817B2BE1229800CDE19D /* EpisodesController.swift */; };
+		BCA5817E2BE1278700CDE19D /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA5817D2BE1278700CDE19D /* Episode.swift */; };
+		BCA581812BE128EB00CDE19D /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCA581802BE128EB00CDE19D /* FeedKit */; };
+		BCA581842BE1342F00CDE19D /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA581822BE1342F00CDE19D /* EpisodeCell.swift */; };
+		BCA581852BE1342F00CDE19D /* EpisodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA581832BE1342F00CDE19D /* EpisodeCell.xib */; };
 		BCBBFC772BCE9F660097AC26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCBBFC762BCE9F660097AC26 /* Alamofire */; };
 		BCBBFC792BCE9F660097AC26 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BCBBFC782BCE9F660097AC26 /* AlamofireDynamic */; };
 		BCBBFC7C2BCFF8640097AC26 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBBFC7B2BCFF8640097AC26 /* APIService.swift */; };
@@ -36,6 +41,10 @@
 		BCA25EC72BCD03DD004A61D9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BCA25ECA2BCE5C31004A61D9 /* PodcastsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsSearchController.swift; sourceTree = "<group>"; };
 		BCA25ECD2BCE5D65004A61D9 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		BCA5817B2BE1229800CDE19D /* EpisodesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesController.swift; sourceTree = "<group>"; };
+		BCA5817D2BE1278700CDE19D /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		BCA581822BE1342F00CDE19D /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
+		BCA581832BE1342F00CDE19D /* EpisodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeCell.xib; sourceTree = "<group>"; };
 		BCBBFC7B2BCFF8640097AC26 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		BCBBFC7E2BD002700097AC26 /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
 		BCBBFC802BD005410097AC26 /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 				BC0B9C812BDA8E8900CEDC75 /* SDWebImage in Frameworks */,
 				BCBBFC772BCE9F660097AC26 /* Alamofire in Frameworks */,
 				BCBBFC792BCE9F660097AC26 /* AlamofireDynamic in Frameworks */,
+				BCA581812BE128EB00CDE19D /* FeedKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				BCA25ECA2BCE5C31004A61D9 /* PodcastsSearchController.swift */,
+				BCA5817B2BE1229800CDE19D /* EpisodesController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				BCA25ECD2BCE5D65004A61D9 /* Podcast.swift */,
+				BCA5817D2BE1278700CDE19D /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,6 +131,8 @@
 			children = (
 				BCBBFC7E2BD002700097AC26 /* PodcastCell.xib */,
 				BCBBFC802BD005410097AC26 /* PodcastCell.swift */,
+				BCA581822BE1342F00CDE19D /* EpisodeCell.swift */,
+				BCA581832BE1342F00CDE19D /* EpisodeCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +157,7 @@
 				BCBBFC762BCE9F660097AC26 /* Alamofire */,
 				BCBBFC782BCE9F660097AC26 /* AlamofireDynamic */,
 				BC0B9C802BDA8E8900CEDC75 /* SDWebImage */,
+				BCA581802BE128EB00CDE19D /* FeedKit */,
 			);
 			productName = Podcast;
 			productReference = BCA25EB02BCD0376004A61D9 /* Podcast.app */;
@@ -175,6 +190,7 @@
 			packageReferences = (
 				BCBBFC752BCE9F660097AC26 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				BC0B9C7F2BDA8E8900CEDC75 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BCA5817F2BE128EB00CDE19D /* XCRemoteSwiftPackageReference "FeedKit" */,
 			);
 			productRefGroup = BCA25EB12BCD0376004A61D9 /* Products */;
 			projectDirPath = "";
@@ -192,6 +208,7 @@
 			files = (
 				BCA25EBD2BCD0377004A61D9 /* Assets.xcassets in Resources */,
 				BCA25EC02BCD0377004A61D9 /* Base in Resources */,
+				BCA581852BE1342F00CDE19D /* EpisodeCell.xib in Resources */,
 				BCBBFC7F2BD002700097AC26 /* PodcastCell.xib in Resources */,
 				BCA25EBB2BCD0376004A61D9 /* Base in Resources */,
 			);
@@ -207,11 +224,14 @@
 				BCA25EB82BCD0376004A61D9 /* ViewController.swift in Sources */,
 				BCBBFC7C2BCFF8640097AC26 /* APIService.swift in Sources */,
 				BCBBFC812BD005410097AC26 /* PodcastCell.swift in Sources */,
+				BCA581842BE1342F00CDE19D /* EpisodeCell.swift in Sources */,
+				BCA5817E2BE1278700CDE19D /* Episode.swift in Sources */,
 				BCA25EB42BCD0376004A61D9 /* AppDelegate.swift in Sources */,
 				BCA25ECE2BCE5D65004A61D9 /* Podcast.swift in Sources */,
 				BCA25EC82BCD03DD004A61D9 /* MainTabBarController.swift in Sources */,
 				BCA25ECB2BCE5C31004A61D9 /* PodcastsSearchController.swift in Sources */,
 				BCA25EB62BCD0376004A61D9 /* SceneDelegate.swift in Sources */,
+				BCA5817C2BE1229800CDE19D /* EpisodesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +466,14 @@
 				minimumVersion = 5.19.1;
 			};
 		};
+		BCA5817F2BE128EB00CDE19D /* XCRemoteSwiftPackageReference "FeedKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nmdias/FeedKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.2;
+			};
+		};
 		BCBBFC752BCE9F660097AC26 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -461,6 +489,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BC0B9C7F2BDA8E8900CEDC75 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		BCA581802BE128EB00CDE19D /* FeedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCA5817F2BE128EB00CDE19D /* XCRemoteSwiftPackageReference "FeedKit" */;
+			productName = FeedKit;
 		};
 		BCBBFC762BCE9F660097AC26 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
