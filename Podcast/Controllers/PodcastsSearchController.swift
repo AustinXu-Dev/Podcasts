@@ -63,7 +63,6 @@ class PodcastsSearchController: UITableViewController, UISearchBarDelegate {
         episodesController.podcast = podcast
         
         navigationController?.pushViewController(episodesController, animated: true)
-        print(indexPath.row)
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -22,9 +22,9 @@ class PodcastCell: UITableViewCell{
             
             episodeCountLabel.text = "\(podcast.trackCount ?? 0) Episodes"
             
-            print("Loading image with url: ", podcast.artworkUrl600 ?? "")
+//            print("Loading image with url: ", podcast.artworkUrl600 ?? "")
             
-            guard let url = URL(string: podcast.artworkUrl600 ?? "") else {return}
+            guard let url = URL(string: podcast.artworkUrl600?.toSecureHTTPS() ?? "") else {return}
             
 //            URLSession.shared.dataTask(with: url){ (data,_,_) in
 //                print("Finished downloading image data: ", data)

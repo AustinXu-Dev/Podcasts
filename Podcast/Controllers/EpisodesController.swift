@@ -23,41 +23,14 @@ class EpisodesController: UITableViewController{
         print("Looking for episodes at feed url: ", podcast?.feedUrl ?? "")
         
         guard let feedUrl = podcast?.feedUrl else { return }
-        guard let url = URL(string: feedUrl) else { return }
-        let parser = FeedParser(URL: url)
-        // Parse asynchronously, not to block the UI.
-        parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
-            // Do your thing, then back to the Main thread
-            switch result{
-            case .success(let feed):
-                // associative enumeration values
-                switch feed{
-                case let .atom(feed):
-                    break
-                case let .rss(feed):
-                    
-                    var episodes = [Episode]() // blank Episode array
-                    
-                    
-                    feed.items?.forEach({ (feedItem) in
-                        let episode = Episode(feedItem: feedItem)
-                        episodes.append(episode)
-                    })
-                    
-                    self.episodes = episodes
-                    
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                    }
-                    break
-                case let .json(feed):
-                    break
-                }
-                
-            case .failure(let error):
-                print("Failed to parse feed: ", error)
+        
+        APIService.shared.fetchEpisodes(feedUrl: feedUrl) { episodes in
+            self.episodes = episodes
+            DispatchQueue.main.async{
+                self.tableView.reloadData()
             }
         }
+        
     }
     
     fileprivate let cellId = "cellId"
