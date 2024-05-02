@@ -13,6 +13,7 @@ struct Episode {
     let pubDate: Date
     let description: String
     let author: String
+    let streamUrl: String
     
     var imageUrl: String?
     
@@ -21,6 +22,7 @@ struct Episode {
         self.pubDate = feedItem.pubDate ?? Date()
         self.description = feedItem.iTunes?.iTunesSubtitle ?? feedItem.description ?? ""
         self.author = feedItem.iTunes?.iTunesAuthor ?? ""
+        self.streamUrl = feedItem.enclosure?.attributes?.url ?? ""
         
         self.imageUrl = feedItem.iTunes?.iTunesImage?.attributes?.href
     }
