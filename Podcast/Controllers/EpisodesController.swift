@@ -53,6 +53,25 @@ class EpisodesController: UITableViewController{
     
     //MARK: UITableView
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let episode = self.episodes[indexPath.row]
+        print("Trying to play episode: ", episode.title)
+        
+        if let scene = UIApplication.shared.connectedScenes.first(where: { $0 is UIWindowScene }) as? UIWindowScene {
+            let window = scene.windows.first
+            // Use the window here
+            
+            // Showing Nib View because View is the first component
+            let playerDetailsView = Bundle.main.loadNibNamed("PlayerDetailsView", owner: self)?.first as! PlayerDetailsView
+            
+            playerDetailsView.episode = episode
+            
+            playerDetailsView.frame = self.view.frame
+            window?.addSubview(playerDetailsView)
+            
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return episodes.count
     }
