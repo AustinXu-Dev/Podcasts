@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC0B9C812BDA8E8900CEDC75 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BC0B9C802BDA8E8900CEDC75 /* SDWebImage */; };
+		BC48F03F2BFB29C700F6B1EE /* CMTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48F03E2BFB29C700F6B1EE /* CMTime.swift */; };
 		BCA25EB42BCD0376004A61D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA25EB32BCD0376004A61D9 /* AppDelegate.swift */; };
 		BCA25EB62BCD0376004A61D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA25EB52BCD0376004A61D9 /* SceneDelegate.swift */; };
 		BCA25EB82BCD0376004A61D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA25EB72BCD0376004A61D9 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC48F03E2BFB29C700F6B1EE /* CMTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMTime.swift; sourceTree = "<group>"; };
 		BCA25EB02BCD0376004A61D9 /* Podcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Podcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA25EB32BCD0376004A61D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA25EB52BCD0376004A61D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				BCBF0EBD2BE382A40010D0B9 /* String.swift */,
 				BCBF0EBF2BE383500010D0B9 /* RSSFeed.swift */,
+				BC48F03E2BFB29C700F6B1EE /* CMTime.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				BCA25EC82BCD03DD004A61D9 /* MainTabBarController.swift in Sources */,
 				BCA25ECB2BCE5C31004A61D9 /* PodcastsSearchController.swift in Sources */,
 				BCA25EB62BCD0376004A61D9 /* SceneDelegate.swift in Sources */,
+				BC48F03F2BFB29C700F6B1EE /* CMTime.swift in Sources */,
 				BCA5817C2BE1229800CDE19D /* EpisodesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

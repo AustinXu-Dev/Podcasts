@@ -37,7 +37,7 @@
                                 <constraint firstAttribute="width" secondItem="Sn4-ep-GUY" secondAttribute="height" id="v4B-a1-wIy"/>
                             </constraints>
                         </imageView>
-                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Cn-ui-oYg">
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Cn-ui-oYg">
                             <rect key="frame" x="-2" y="399" width="349" height="37"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="aaq-Fq-nQ6"/>
@@ -46,14 +46,14 @@
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ll-9s-ZQr">
                             <rect key="frame" x="0.0" y="440" width="345" height="22"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fon-jc-dM7">
-                                    <rect key="frame" x="0.0" y="0.0" width="273" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fon-jc-dM7">
+                                    <rect key="frame" x="0.0" y="0.0" width="310" height="22"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88:88:88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjk-u4-VPR">
-                                    <rect key="frame" x="273" y="0.0" width="72" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--:--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjk-u4-VPR">
+                                    <rect key="frame" x="310" y="0.0" width="35" height="22"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -170,6 +170,9 @@
             </constraints>
             <connections>
                 <outlet property="authorLabel" destination="UmA-Bz-V1x" id="eIz-hP-sZ5"/>
+                <outlet property="currentTimeLabel" destination="Fon-jc-dM7" id="Fsw-gl-ZT5"/>
+                <outlet property="currentTimeSlider" destination="9Cn-ui-oYg" id="jcT-yi-gph"/>
+                <outlet property="durationLabel" destination="pjk-u4-VPR" id="xFI-SD-UrJ"/>
                 <outlet property="episodeImageView" destination="Sn4-ep-GUY" id="aoc-dl-bTt"/>
                 <outlet property="playPauseButton" destination="5nG-gg-DHW" id="w9f-x1-Ckb"/>
                 <outlet property="titleLabel" destination="2EG-FV-nsP" id="ua7-Gw-8M2"/>
@@ -188,7 +191,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
